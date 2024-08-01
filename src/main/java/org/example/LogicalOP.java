@@ -2,7 +2,8 @@ package org.example;
 
 public class LogicalOP {
 
-    //if-else
+//   Assignment 1 - if-else
+// 3.
     public int checkHigherNumber(int firstNumber, int secondNumber) {
         if (firstNumber < secondNumber) {
             return secondNumber;
@@ -23,7 +24,7 @@ public class LogicalOP {
         }
     }
 
-
+// 4.
     public String textCompare(String text) {
         if (text.equals("Evozon")) {
             return "Learning text comparison";
@@ -32,6 +33,7 @@ public class LogicalOP {
         }
     }
 
+// 5.
     public String textAndNumCompare(String text, int number) {
         if (text.equals("Evozon") && number <= 3) {
             return text + number;
@@ -40,6 +42,7 @@ public class LogicalOP {
         }
     }
 
+// 6.
     public String snowAmount(int cmOfSnow) {
         if (cmOfSnow > 8 || cmOfSnow == 6) {
             return "The amount of snow this winter was(cm): " + cmOfSnow;
@@ -48,7 +51,7 @@ public class LogicalOP {
         }
     }
 
-
+// 7.
     public String numberCompare(float number) {
         if (number > 3 && number != 4)
             return "The number is greater than 3 and not equal to 4";
@@ -60,7 +63,7 @@ public class LogicalOP {
             return "";
     }
 
-
+// 8.
     public String numbersCase(int number) {
 
         switch (number) {
@@ -89,6 +92,7 @@ public class LogicalOP {
         }
     }
 
+// 9.
     public boolean isNumberEven(int number) {
         if (number % 2 == 0)
             return true;
@@ -96,6 +100,7 @@ public class LogicalOP {
             return false;
     }
 
+// 10.
     public boolean isEligibleToVote(int age) {
         if (age >= 18)
             return true;
@@ -103,6 +108,7 @@ public class LogicalOP {
             return false;
     }
 
+// 11.
     public int largestNumberOfThree(int firstNum, int secondNum, int thirdNum) {
         if (firstNum > secondNum && firstNum > thirdNum)
             return firstNum;
@@ -113,19 +119,23 @@ public class LogicalOP {
     }
 
 
-    //for loops
+// Assignment 2 - for loops
+// 2.
     public void countToMinusHundred(int number) {
         for (int i = number; i >= -100; i--) {
             System.out.println(i);
         }
     }
 
+// 3.
     public void countBetweenNr(int startNr, int endNr) {
         for (int i = startNr; i <= endNr; i++) {
             System.out.println(i);
         }
     }
 
+
+// 4.
     public void countAscending(int firstNum, int secondNum) {
         if (firstNum > secondNum) {
             for (int i = secondNum; i <= firstNum; i++) {
@@ -138,7 +148,7 @@ public class LogicalOP {
         }
     }
 
-
+// 5.
     public void evenNumbersFrom1To100() {
         for (int i = 1; i <= 100; i++) {
             if (i % 2 == 0)
@@ -147,6 +157,7 @@ public class LogicalOP {
         }
     }
 
+// 6.
     public void oddNumbersFrom1To100() {
         for (int i = 1; i <= 100; i++) {
             if (i % 2 != 0)
@@ -154,6 +165,7 @@ public class LogicalOP {
         }
     }
 
+// 7.
 //    public int averageNr(int number){
 
 
