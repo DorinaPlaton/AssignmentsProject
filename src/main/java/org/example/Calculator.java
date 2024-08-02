@@ -3,6 +3,8 @@ package org.example;
 import java.util.Scanner;
 
 public class Calculator {
+    LogicalOP op = new LogicalOP();
+
     public void printMyName() {
         System.out.println("Hello");
         System.out.println("Dorina");
@@ -86,7 +88,7 @@ public class Calculator {
         float timeInH = hours + minToH + secToH;
         //calculate speed
         float speedMeterPerSec = distance / timeInSec;
-        float speedKmPerH = (distance/1000) / timeInH;
+        float speedKmPerH = (distance / 1000) / timeInH;
         float speedMilesPerH = (distance / 1609) / timeInH;
         System.out.println("Speed in meters per second: " + speedMeterPerSec + " m/s");
         System.out.println("Speed in km per hour: " + speedKmPerH + " km/h");
@@ -117,4 +119,6 @@ public class Calculator {
         System.out.println("  +-----+ ");
 
     }
+
+
 }

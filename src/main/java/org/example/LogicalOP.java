@@ -120,6 +120,13 @@ public class LogicalOP {
 
 
     // Assignment 2 - for loops
+    // 1.
+    public void countToHundred(int number) {
+        for (int i = number; i <= 100; i++) {
+            System.out.println(i);
+        }
+    }
+
     // 2.
     public void countToMinusHundred(int number) {
         for (int i = number; i >= -100; i--) {
@@ -197,7 +204,110 @@ public class LogicalOP {
         }
     }
 
+    // Assignment 3 - while loop
+// 1.
+    public void countdownToHundred(int number) {
+        while (number >= 100) {
+            System.out.println(number);
+            number--;
+        }
+    }
 
-//while loop
+    // 2.
+    public void countdownToNegativeHundred(int number) {
+        while (number >= -100) {
+            System.out.println(number);
+            number--;
+        }
+    }
+
+    // 3.
+    public void countdownBetweenNumbers(int x, int y) {
+        while (x >= y) {
+            System.out.println(x);
+            x--;
+        }
+    }
+
+    // 4.
+    public void ascendingCountdownBetweenNr(int x, int y) {
+        int max = checkHigherNumber(x, y);
+        int min = checkLowestNumber(x, y);
+        while (min <= max) {
+            System.out.println(min);
+            min++;
+        }
+
+
+    }
+
+    // 5.
+    public void evenNumbers() {
+        int i = 1;
+        while (i <= 100) {
+            if (i % 2 == 0)
+                System.out.println(i);
+            i++;
+        }
+    }
+
+    // 6.
+    public void oddNumbers() {
+        int i = 1;
+        while (i <= 100) {
+            if (i % 2 != 0)
+                System.out.println(i);
+            i++;
+        }
+    }
+
+    // 7.
+    public void sumOfNumbersRange() {
+        int sum = 0;
+        int count = 0;
+        int i = 111;
+        while (i <= 8899) {
+            sum += i;
+            i++;
+            count++;
+        }
+        double average = (double) sum / count;
+        System.out.println("Sum of the numbers is: " + sum);
+        System.out.println("The average of the numbers is: " + average);
+    }
+
+    // 8.
+    public double averageOfNumbersDivisibleBy7(int x, int y) {
+        int min = checkLowestNumber(x, y);
+        int max = checkHigherNumber(x, y);
+        int sum = 0;
+        int count = 0;
+        while (min <= max) {
+            if (min % 7 == 0) {
+                sum += min;
+                count++;
+            }
+            min++;
+        }
+        double average = (double) sum / count;
+        return average;
+    }
+
+    // 9.
+    public void fibonacciSequence() {
+        int count = 0;
+        int number1 = 0;
+        int number2 = 1;
+        System.out.println("First 20 numbers of the Fibonacci sequence: ");
+        while (count < 20) {
+            System.out.println(number1);
+            int sumOfPrevious2Nr = number1 +number2;
+            number1 = number2;
+            number2 = sumOfPrevious2Nr;
+            count++;
+        }
+    }
+
+
 
 }
