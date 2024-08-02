@@ -309,5 +309,36 @@ public class LogicalOP {
     }
 
 
+    // 10.
+    public void cozaLozaWoza() {
+        int i = 1;
+        int numberPerLine = 11;
+        while (i <= 110) {
+            int count = 1;
+            while (count <= numberPerLine && i <= 110) {
+                if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0)
+                    System.out.print("CozaLozaWoza");
+                else if (i % 5 == 0 && i % 7 == 0)
+                    System.out.print("WozaLoza");
+                else if (i % 3 == 0 && i % 5 == 0)
+                    System.out.print("CozaLoza");
+                else if (i % 3 == 0 && i % 7 == 0)
+                    System.out.print("CozaWoza");
+                else if (i % 7 == 0)
+                    System.out.print("Woza");
+                else if   (i % 5 == 0)
+                    System.out.print("Loza");
+                else if (i % 3 == 0)
+                System.out.print("Coza");
+                else
+                    System.out.print(i);
+                System.out.print(" ");
+                i++;
+                count++;
+
+            }
+            System.out.println();
+        }
+    }
 
 }
