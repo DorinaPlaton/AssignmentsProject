@@ -35,8 +35,8 @@ public class Main {
         op.countAscending(35, 45);
         op.evenNumbersFrom1To100();
         op.oddNumbersFrom1To100();
-        System.out.println(op.sumOfNumbers(67));
-        System.out.println(op.averageOfNumbers(67));
+        System.out.println("The sum of the numbers: " + op.sumOfNumbers(67));
+        System.out.println("The average of the numbers : " + op.averageOfNumbers(67));
         op.asteriskPattern();
         op.countdownToHundred(145);
         op.countdownToNegativeHundred(23);
