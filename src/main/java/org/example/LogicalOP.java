@@ -37,9 +37,11 @@ public class LogicalOP {
     public String textAndNumCompare(String text, int number) {
         if (text.equals("Evozon") && number <= 3) {
             return text + number;
-        } else {
+        } else if ((!(text.equals("Evozon")) && number >= 4)) {
             return number + text;
         }
+        else
+            return "";
     }
 
     // 6.
@@ -60,7 +62,7 @@ public class LogicalOP {
         else if (number < 3)
             return "The number is lower than 3";
         else
-            return "";
+            return "I am confused, I think the number is 3";
     }
 
     // 8.

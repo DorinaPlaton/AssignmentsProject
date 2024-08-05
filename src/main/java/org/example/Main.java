@@ -22,11 +22,11 @@ public class Main {
 
         System.out.println("Bigger number is: " + op.checkHigherNumber(3, 7));
         System.out.println(op.textCompare("evozon"));
-        System.out.println(op.textAndNumCompare("Evozon", 3));
+        System.out.println(op.textAndNumCompare("Evozon", 1));
         System.out.println(op.snowAmount(9));
         System.out.println(op.numberCompare(3.999999F));
         System.out.println(op.numbersCase(43));
-        System.out.println(op.isNumberEven(0));
+        System.out.println("The number is even: " + op.isNumberEven(0));
         System.out.println("Is this person eligible to vote: " + op.isEligibleToVote(18));
         System.out.println("The largest of the numbers is: " + op.largestNumberOfThree(5, 12, 32));
         op.countToHundred(34);
