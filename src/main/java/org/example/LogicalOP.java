@@ -39,8 +39,7 @@ public class LogicalOP {
             return text + number;
         } else if ((!(text.equals("Evozon")) && number >= 4)) {
             return number + text;
-        }
-        else
+        } else
             return "";
     }
 
@@ -303,7 +302,7 @@ public class LogicalOP {
         System.out.println("First 20 numbers of the Fibonacci sequence: ");
         while (count < 20) {
             System.out.println(number1);
-            int sumOfPrevious2Nr = number1 +number2;
+            int sumOfPrevious2Nr = number1 + number2;
             number1 = number2;
             number2 = sumOfPrevious2Nr;
             count++;
@@ -328,10 +327,10 @@ public class LogicalOP {
                     System.out.print("CozaWoza");
                 else if (i % 7 == 0)
                     System.out.print("Woza");
-                else if   (i % 5 == 0)
+                else if (i % 5 == 0)
                     System.out.print("Loza");
                 else if (i % 3 == 0)
-                System.out.print("Coza");
+                    System.out.print("Coza");
                 else
                     System.out.print(i);
                 System.out.print(" ");
@@ -343,4 +342,91 @@ public class LogicalOP {
         }
     }
 
+    // Assignment 3 - Arrays
+    // 3.
+    public int[] evenValuesTo100(int[] evenNumber) {
+        evenNumber = new int[51];
+        int index = 0;
+        for (int i = 0; i <= 100; i++) {
+            if (i % 2 == 0) {
+                evenNumber[index] = i;
+                index++;
+            }
+        }
+        return evenNumber;
+    }
+
+    // 4.
+    public int averageOfTheArray(int[] numbersArray) {
+        int sumOfArray = 0;
+        for (int i : numbersArray) {
+            sumOfArray += i;
+        }
+        int average = sumOfArray / numbersArray.length;
+        return average;
+    }
+
+    public int[] anArray(int length) {
+        int[] array = new int[length];
+        for (int i = 0; i < length; i++) {
+            array[i] = i + 1;
+        }
+        return array;
+    }
+
+    // 5.
+
+    public String[] stringsArray() {
+        String[] array = new String[3];
+        array[0] = "Dorina";
+        array[1] = "Cristina";
+        array[2] = "Mihaela";
+        array[3] = "Ioana";
+        array[4] = "Andreea";
+        array[5] = "Maria";
+        return array;
+
+    }
+
+    public boolean checkStringsArray(String[] receivedArray, String receivedString) {
+        for (String i : receivedArray) {
+            if (i.equals(receivedString)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    // 6.
+    public int positionOfTheNumber(int[] numbersArray, int givenNumber) {
+        for (int i = 0; i <= numbersArray.length; i++) {
+            if (numbersArray[i] == givenNumber) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    // 7.
+    public void arrayPattern() {
+        String[] myStringPattern = {"- ", "- ", "- ", "- ", "- ", "- ", "- ", "- ", "- ", "- "};
+        for (int i = 0; i < 10; i++) {
+            for (String j : myStringPattern) {
+                System.out.print(j);
+            }
+            System.out.println();
+            System.out.println();
+        }
+    }
+
+    // 8. work in progress
+    public int[] skipTheNumber(int[] numbersArray, int givenNumber){
+        for (int i = 0; i <= numbersArray.length; i++) {
+            if (numbersArray[i] == givenNumber) {
+                continue;
+            }
+
+        }
+        return numbersArray;
+    }
 }

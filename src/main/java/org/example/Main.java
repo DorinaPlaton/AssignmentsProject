@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         LogicalOP op = new LogicalOP();
         Calculator calculator = new Calculator();
-
+        Print print = new Print();
         calculator.sumOfMyNumbers();
         calculator.divOfMyNumbers();
         calculator.resultsOfOperations();
@@ -48,6 +48,14 @@ public class Main {
         System.out.println("The average of numbers divisible by 7: " + op.averageOfNumbersDivisibleBy7(3, 28));
         op.fibonacciSequence();
         op.cozaLozaWoza();
+
+        int[] array = new int[50];
+        print.printArray(op.evenValuesTo100(array));
+        System.out.println("Average of the array: " + op.averageOfTheArray(op.anArray(50)));
+        System.out.println("The received name is found in the array of names: " + op.checkStringsArray(op.stringsArray(), "Alina"));
+        System.out.println(op.positionOfTheNumber(op.anArray(50), 3));
+        op.arrayPattern();
+        print.printArray(op.skipTheNumber(op.anArray(60), 3));
     }
 
 }
