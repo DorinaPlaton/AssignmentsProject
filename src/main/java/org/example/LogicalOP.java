@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Random;
+
 public class LogicalOP {
 
     //   Assignment 1 - if-else
@@ -39,8 +41,7 @@ public class LogicalOP {
             return text + number;
         } else if ((!(text.equals("Evozon")) && number >= 4)) {
             return number + text;
-        } else
-            return "";
+        } else return "";
     }
 
     // 6.
@@ -54,14 +55,10 @@ public class LogicalOP {
 
     // 7.
     public String numberCompare(float number) {
-        if (number > 3 && number != 4)
-            return "The number is greater than 3 and not equal to 4";
-        else if (number == 4)
-            return "The number is equal to 4";
-        else if (number < 3)
-            return "The number is lower than 3";
-        else
-            return "I am confused, I think the number is 3";
+        if (number > 3 && number != 4) return "The number is greater than 3 and not equal to 4";
+        else if (number == 4) return "The number is equal to 4";
+        else if (number < 3) return "The number is lower than 3";
+        else return "I am confused, I think the number is 3";
     }
 
     // 8.
@@ -95,28 +92,21 @@ public class LogicalOP {
 
     // 9.
     public boolean isNumberEven(int number) {
-        if (number % 2 == 0)
-            return true;
-        else
-            return false;
+        if (number % 2 == 0) return true;
+        else return false;
     }
 
     // 10.
     public boolean isEligibleToVote(int age) {
-        if (age >= 18)
-            return true;
-        else
-            return false;
+        if (age >= 18) return true;
+        else return false;
     }
 
     // 11.
     public int largestNumberOfThree(int firstNum, int secondNum, int thirdNum) {
-        if (firstNum > secondNum && firstNum > thirdNum)
-            return firstNum;
-        else if (secondNum > firstNum && secondNum > thirdNum)
-            return secondNum;
-        else
-            return thirdNum;
+        if (firstNum > secondNum && firstNum > thirdNum) return firstNum;
+        else if (secondNum > firstNum && secondNum > thirdNum) return secondNum;
+        else return thirdNum;
     }
 
 
@@ -159,8 +149,7 @@ public class LogicalOP {
     // 5.
     public void evenNumbersFrom1To100() {
         for (int i = 1; i <= 100; i++) {
-            if (i % 2 == 0)
-                System.out.println(i);
+            if (i % 2 == 0) System.out.println(i);
 
         }
     }
@@ -168,8 +157,7 @@ public class LogicalOP {
     // 6.
     public void oddNumbersFrom1To100() {
         for (int i = 1; i <= 100; i++) {
-            if (i % 2 != 0)
-                System.out.println(i);
+            if (i % 2 != 0) System.out.println(i);
         }
     }
 
@@ -246,8 +234,7 @@ public class LogicalOP {
     public void evenNumbers() {
         int i = 1;
         while (i <= 100) {
-            if (i % 2 == 0)
-                System.out.println(i);
+            if (i % 2 == 0) System.out.println(i);
             i++;
         }
     }
@@ -256,8 +243,7 @@ public class LogicalOP {
     public void oddNumbers() {
         int i = 1;
         while (i <= 100) {
-            if (i % 2 != 0)
-                System.out.println(i);
+            if (i % 2 != 0) System.out.println(i);
             i++;
         }
     }
@@ -317,22 +303,14 @@ public class LogicalOP {
         while (i <= 110) {
             int count = 1;
             while (count <= numberPerLine && i <= 110) {
-                if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0)
-                    System.out.print("CozaLozaWoza");
-                else if (i % 5 == 0 && i % 7 == 0)
-                    System.out.print("WozaLoza");
-                else if (i % 3 == 0 && i % 5 == 0)
-                    System.out.print("CozaLoza");
-                else if (i % 3 == 0 && i % 7 == 0)
-                    System.out.print("CozaWoza");
-                else if (i % 7 == 0)
-                    System.out.print("Woza");
-                else if (i % 5 == 0)
-                    System.out.print("Loza");
-                else if (i % 3 == 0)
-                    System.out.print("Coza");
-                else
-                    System.out.print(i);
+                if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0) System.out.print("CozaLozaWoza");
+                else if (i % 5 == 0 && i % 7 == 0) System.out.print("WozaLoza");
+                else if (i % 3 == 0 && i % 5 == 0) System.out.print("CozaLoza");
+                else if (i % 3 == 0 && i % 7 == 0) System.out.print("CozaWoza");
+                else if (i % 7 == 0) System.out.print("Woza");
+                else if (i % 5 == 0) System.out.print("Loza");
+                else if (i % 3 == 0) System.out.print("Coza");
+                else System.out.print(i);
                 System.out.print(" ");
                 i++;
                 count++;
@@ -373,6 +351,17 @@ public class LogicalOP {
         }
         return array;
     }
+
+//    public int[] anotherArray(int length) {
+//        Random rand = new Random();
+//        int[] array = new int[length];
+//        for (int i = 0; i < length; i++) {
+//            int randomValue = rand.nextInt(101);
+//            array[i] = randomValue;
+//        }
+//        return array;
+//    }
+
 
     // 5.
 
@@ -419,14 +408,42 @@ public class LogicalOP {
         }
     }
 
-    // 8. work in progress
-    public int[] skipTheNumber(int[] numbersArray, int givenNumber){
-        for (int i = 0; i <= numbersArray.length; i++) {
-            if (numbersArray[i] == givenNumber) {
+    // 8.
+    int[] oneMoreArray = {12, 2, 35, 3, 45, 3, 78, 3, 12, 90, 45, 12, 123, 43, 45};
+
+    public int[] skipTheNumber(int[] numbersArray, int givenNumber) {
+        int newSize = 0;
+        for (int i : numbersArray) {
+            if (i != givenNumber) {
+                newSize++;
+            }
+        }
+        int[] resultArray = new int[newSize];
+        int index = 0;
+        for (int j : numbersArray) {
+            if (j == givenNumber) {
                 continue;
+            }
+            resultArray[index] = j;
+            index++;
+        }
+        return resultArray;
+    }
+
+    // 9.
+    public int secondSmallestNr(int[] array) {
+        int smallest = array[0];
+        int secondSmallest = array[1];
+        for (int j : array) {
+            if (j < smallest) {
+                secondSmallest = smallest;
+                smallest = j;
+            } else if (j < secondSmallest && j != smallest) {
+                secondSmallest = j;
             }
 
         }
-        return numbersArray;
+        return secondSmallest;
     }
+
 }
